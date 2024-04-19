@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patua+One&display=swap');
+
+.container-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 600px;
+
+}
+
+.container-text-us{
+    width: 110vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vh;
+}
+
+.container-text-us h2{
+    font-family: "Patua One", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 48px;
+    margin-bottom: 5vh;
+}
+
+.container-text-us p{
+    font-family: "Inria Sans", sans-serif;
+    margin: auto;
+    text-align: justify;
+    font-size: 28px;
+}
+
+.container-img-action img{
+    width: 440px;
+    margin: 10vh;
+}

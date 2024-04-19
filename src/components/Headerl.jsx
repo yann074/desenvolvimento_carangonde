@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/logo_carangonde.svg"
+import './styles/Headerl.css'
 
 export const Headerl = () => {
   return (
@@ -16,7 +17,7 @@ export const Headerl = () => {
                     <li>Eventos</li>
                     <li>Contato</li>
                 </ul>
-                <button>entrar</button>
+                <button>Entrar</button>
             </div>
         </header>
     </>

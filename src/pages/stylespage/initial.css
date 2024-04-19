@@ -1,0 +1,6 @@
+.bg-gray{
+    background-image: url('../../assets/bg_gray.svg');
+    background-position: center;
+    background-size: cover;
+}
+
