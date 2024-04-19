@@ -11,9 +11,9 @@
     width: 1000px;
     margin: auto;
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 30px;
 }
 
-.container-blocks div{
-    
+.container-blocks p{
+    margin: 100px;
 }
