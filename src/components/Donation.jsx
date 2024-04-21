@@ -1,12 +1,13 @@
 import React from 'react'
+import 
 
-export const Pix = () => {
+export const Donation = () => {
   return (
     <>
     <section>
         <h4>FAÇA A DIFERENÇA COM SUA DOAÇÃO</h4>
     <div>
-        {/ * img do qr code */}
+        {/* img do qr code */}
         <h6>Telefone: (xx) xxxx-xxxx</h6>
         </div>
     </section>

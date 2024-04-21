@@ -3,7 +3,11 @@ import { Headerl } from '../components/Headerl'
 import { Presentation } from '../components/Presentation'
 import { AbouteMe } from '../components/AbouteMe'
 import { Value } from '../components/Value'
+import { Footer } from '../components/Footer'
+import {Testimonial} from '../components/Testimonial'
+import { Donation } from '../components/Donation'
 import './stylespage/initial.css'
+
 
 
 export const Initial = () => {
@@ -14,9 +18,15 @@ export const Initial = () => {
         <Presentation />
     </div>
         <AbouteMe />
+        
         <div className='bg-gray'>
           <Value />
-        </div> 
+          <Testimonial />
+        </div>  
+        <Donation />
+        <footer>
+          <Footer />
+        </footer>
     </main>
   )
 }

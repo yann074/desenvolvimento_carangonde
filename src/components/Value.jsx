@@ -7,19 +7,19 @@ import './styles/Valuel.css'
 export const Value = () => {
   return (
     <>
-    <section>
+    <section className='container-value'>
         <h2>NOSSOS VALORES</h2>
         <div className='container-blocks'>
             <div>
-                <img src={dollar} alt="" />
+                <img src={dollar} alt="" className='bg-yellow' />
                 <p>Uma organização social sem fins lucrativos</p>
             </div>
             <div>
-                <img src={group} alt="" />
+                <img src={group} alt="" className='bg-yellow' />
                 <p>Entregamos cidadania as pessoas em situação de vulnerabilidade social</p>
             </div>
             <div>
-                <img src={water} alt="" />
+                <img src={water} alt="" className='bg-yellow' />
                 <p>Facilitamos o seu acesso aos serviços públicos</p>
             </div>
         </div>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
+
+.container-section-presentation{
+    width: auto;;
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    
+}
+
+.img-presentation{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+    margin-top: -0vh;
+    padding: auto;
+}
+
+.container-presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 14vh auto auto auto;
+}
+
+.container-text-presentation h1{
+    max-width: 100vh;
+    font-family: "Patua One", serif;
+    font-size: 50px;
+    text-align: left;
+}
+
+.text-yellow{
+    color: #F6B60D
+}
+
+.button-presentation button{
+    width: 288px;
+    height: 61px;
+    background-color: #F6B60D;
+    border: none;
+    border-radius: 20px;
+    font-family: "Patua One", serif;
+    font-size: 38px;
+    margin: 10vh 0 0 auto;
+}
