@@ -1,7 +1,6 @@
-import React from 'react'
 import logo from "../assets/logo_carangonde.svg"
 import './styles/Headerl.css'
-
+import { Link } from 'react-router-dom'
 export const Headerl = () => {
   return (
     <>
@@ -14,10 +13,14 @@ export const Headerl = () => {
                 <ul>
                     <li>Ínicio</li>
                     <li>Quem Somos</li>
-                    <li>Eventos</li>
+                    <li><Link to={'/eventos'}Eventos></Link></li>
+                    
                     <li>Contato</li>
                 </ul>
-                <button>Entrar</button>
+                <button>
+                     <Link to={'/login'}>Entrar</Link>
+                </button>
+               
             </div>
         </header>
     </>

@@ -1,6 +1,5 @@
-import React from 'react'
 
-export const cousers = () => {
+export const Cousers = () => {
   return (
     <>
     {/* HEADER */}

@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import './Loginl.css'
 
 
@@ -17,7 +17,8 @@ export const Login = () => {
             <input type="email" placeholder='Digite seu email' />
             <input type="password" placeholder='Digite sua senha'/>
             <input type="password" placeholder='Confirmar senha' />
-            <button className='entrar'>ENTRAR</button>
+            {/* <button className='entrar'>ENTRAR</button> */}
+            <Link to={'/cousers'}> Entrar</Link>
             <h5>Esqueci Minha Senha</h5>
             <h5>NÃO TEM CONTA? CADASTRE-SE AQUI</h5>
         </div>
