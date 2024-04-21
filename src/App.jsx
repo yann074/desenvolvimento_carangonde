@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import { Initial } from './pages/Initial'
-import { login } from './pages/login_register/login/Loogin.jsx'
 import "./style.css"
-
+import { Login } from './pages/login/Login';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 function App() {
 
   return (
     <>
-      <Initial />
-      <login />
-      
+     
+      <Login />
     </>
   )
 }

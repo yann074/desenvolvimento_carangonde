@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+.container-pix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 28px;
+    height: 70vh;
+    width: auto;
+    font-family: 'Inria Sans', sans-serif;
+    margin: 5%;
+}
+
+.container-pix h4{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;    
+}
+
+.container-img-nmr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.container-img-nmr h6{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    font-size: 30px;
+}

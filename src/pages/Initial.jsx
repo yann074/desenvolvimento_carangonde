@@ -4,8 +4,7 @@ import { Presentation } from '../components/Presentation'
 import { AbouteMe } from '../components/AbouteMe'
 import { Value } from '../components/Value'
 import { Footer } from '../components/Footer'
-import {Testimonial} from '../components/Testimonial'
-import { Donation } from '../components/Donation'
+import { Evidence } from '../components/Evidence'
 import './stylespage/initial.css'
 
 
@@ -18,12 +17,10 @@ export const Initial = () => {
         <Presentation />
     </div>
         <AbouteMe />
-        
         <div className='bg-gray'>
           <Value />
-          <Testimonial />
+          <Evidence />
         </div>  
-        <Donation />
         <footer>
           <Footer />
         </footer>
