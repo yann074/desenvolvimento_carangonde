@@ -7,7 +7,7 @@ import './styles/Presentation.css'
 export const Presentation = () => {
   return (
     <>
-    <section>
+    <section className='container-section-presentation'>
         <div className='container-presentation'>
             <div className='container-text-presentation'>
                 <h1>Construindo Esperança, Erguendo Lares: <span className='text-yellow'>Juntos</span>
