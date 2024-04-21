@@ -18,17 +18,40 @@
 
 .container_register_apresentation{
     background-image: url('../../assets/img_login.svg');
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f0f0f0;
-      
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 37, 37);
+    height: 80vh;
+    width: 30vw;
+    background-color: #f0f0f0;
+}
+
+.container_register_apresentation h1{
+    color: white;
+    font-size: 60px;
+    width: 20vw;
+    text-align: center;
+    padding: auto;
+}
+
+.container_register_apresentation h3{
+    color: #F6B60D;
+    font-size: 32px;
+    text-align: center;
+    width: 10em;
+    margin-top: 1em;
 }
 
 .container_register_op{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 30vw;
 }
 
 .container_register_op h2{
@@ -43,35 +66,46 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  
-  .container_register_op button {
+.entrar{
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    border-radius: 10px;
+    background-color: #F6B60D;
     color: white;
     font-size: 1rem;
     cursor: pointer;
-  }
+}
+
+.google{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+}
   
-  .container_register_op input {
+.container_register_op input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid black;
-    border-width: 1px;
+    border-bottom-width: 2px;
     outline: 0;
     border-radius: 5px;
     font-size: 1rem;
-  }
+}
   
-  .container_register_op h5 {
+.container_register_op h5 {
     font-size: 0.9rem;
     margin-top: 10px;
     text-align: center;
-  }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Loginl.css'
 
+
 export const Login = () => {
   return (
     <>
@@ -11,9 +12,11 @@ export const Login = () => {
         </div>
         <div className='container_login_op'>
             <h2>Login</h2>
+
             <button className='google'>GOOGLE</button>
             <input type="email" placeholder='Digite seu email' />
             <input type="password" placeholder='Digite sua senha'/>
+            <input type="password" placeholder='Confirmar senha' />
             <button className='entrar'>ENTRAR</button>
             <h5>Esqueci Minha Senha</h5>
             <h5>NÃO TEM CONTA? CADASTRE-SE AQUI</h5>

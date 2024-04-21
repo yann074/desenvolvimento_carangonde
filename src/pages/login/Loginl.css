@@ -18,16 +18,39 @@
 
 .container_login_apresentation{
     background-image: url('../../assets/img_login.svg');
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
+    width: 30vw;
     background-color: #f0f0f0;
+}
+
+.container_login_apresentation h1{
+    color: white;
+    font-size: 60px;
+    width: 20vw;
+    text-align: center;
+    padding: auto;
+}
+
+.container_login_apresentation h3{
+    color: #F6B60D;
+    font-size: 32px;
+    text-align: center;
+    width: 10em;
+    margin-top: 1em;
 }
 
 .container_login_op{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 30vw;
 }
 
 .container_login_op h2{
