@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.bg-grey{
+    background-image: url('../../assets/bg_gray.svg');
+    background-position: center;
+    background-size: cover;
+}
+.container-main-presentation{
+    max-width: 160vh;   
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    margin: 3vh auto 3vh auto;
+    
+}
+.container-presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 45vh;
+    margin: 18vh auto auto auto;
+}
+.container-text-presentation h1{
+    max-width: 60vh;
+    font-family: "Patua One", serif;
+    font-size: 50px;
+    text-align: left;
+}
+
+.img-presentation{
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    margin-left: auto;
+}
+
+.button-presentation button{
+    width: 288px;
+    height: 61px;
+    background-color: #F6B60D;
+    border: none;
+    border-radius: 20px;
+    font-family: "Patua One", serif;
+    font-size: 28px;
+    margin: 10vh 0 0 auto;
+}
+
+
+.section-black{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4%;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    color: white;
+}
+.section-black ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px 30px;
+    margin: auto;
+   
+    font-family: "Inria Sans", sans-serif;
+}
+.section-black li{
+    margin: 0px 10px;
+    list-style: none;
+    font-size: 38px;
+    padding: 2px;
+}
+.section-black span{
+    padding: 5px;
+}
