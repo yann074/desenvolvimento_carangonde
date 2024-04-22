@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import { Headerl } from '../../components/Headerl'
 import './Cousers.css'
 import FotoCurso from '../../assets/image-curso.svg'
+=======
+import React from 'react'
+>>>>>>> 7c27b4075ca34290d5a013b1ef14c5b972be7c07
 export const Cousers = () => {
   return (
     <>

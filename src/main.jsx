@@ -4,25 +4,23 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Initial } from './pages/Initial.jsx'
 import { Login } from './pages/login/Login.jsx'
 import React from 'react'
-import {Eventos} from './pages/events/Eventos.jsx';
-import {Cousers} from './pages/Cousers/Cousers.jsx'
+import { Eventss } from './pages/Eventsl/Eventss.jsx'
+import './style.css'
+
 const  router = createBrowserRouter([
     {
       path:'/',
       element: <Initial/>,
     },  
     {
-      path:'login',
+      path:'/login',
       element: <Login/>,
     },
     {
-      path: 'eventos',
-      element: <Eventos/>
+      path: '/eventos',
+      element: <Eventss/>
     },
-    {
-      path:'cousers',
-      element:<Cousers/>
-    }
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

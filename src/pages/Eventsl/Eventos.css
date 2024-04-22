@@ -1,0 +1,43 @@
+.container-texts{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.h1-principal{
+    font-size: 43px;
+    margin: 35px;
+}
+.texto-principal{
+    font-size: 25px;
+    padding-bottom: 130px;
+    letter-spacing: 2px;
+}   
+
+.grid-container{
+    display: grid;
+    margin-bottom: 200px;
+    
+}
+.container-div{
+    
+    display: grid;
+    grid-template-columns: 25% 25%;
+    row-gap: 30px;
+}
+.vazio-branco{
+    display: grid;
+    text-align: center;
+    background-color: black;
+    width: 1px;
+    margin-left: 17%;
+    color: white;
+    height: 90px;
+    padding-left: 40px;
+    padding-right: 100px;
+    border-radius: 8px;
+}
+.vazio-branco span{
+    color: gold;
+    font-size: 20px;
+
+}

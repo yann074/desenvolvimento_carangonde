@@ -5,11 +5,13 @@ export const Evidence = () => {
   return (
     <>
     <section className='container-evidence'>
-        <h2>Depoimentos</h2>
-        <p>Descubra as histórias inspiradoras de transformação: 
-            nossos depoimentos são testemunhos reais de esperança, 
-            coragem e superação. Venha se inspirar conosco</p>
+            <h2 className='text-dep'>Depoimentos</h2>
+
+            <p className='text-apr'>Descubra as histórias inspiradoras de transformação:
+                nossos depoimentos são testemunhos reais de esperança,
+                coragem e superação. Venha se inspirar conosco</p>
             <div>
+            
                 <div className='evidence_1'>
                     <div className='evidence_text1'>
                         <p>“Hoje fui receber minha cesta basica, doada pela 
