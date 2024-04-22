@@ -1,31 +1,44 @@
+<<<<<<< HEAD
+import { Headerl } from '../../components/Headerl'
+import './Cousers.css'
+import FotoCurso from '../../assets/image-curso.svg'
+=======
 import React from 'react'
+>>>>>>> 7c27b4075ca34290d5a013b1ef14c5b972be7c07
 export const Cousers = () => {
   return (
     <>
-    {/* HEADER */}
-    <section> 
-        <div>
-            <div>
-                <h1><span>Aprimore</span> Suas Habilidades Com Os <span>Nossos Cursos</span></h1>
-                <button>Vamos Aprender</button>
+      <div className='bg-grey'>
+        <Headerl />
+        <main className='container-main-presentation'>
+          <div className='container-presentation'>
+            <div className='container-text-presentation'>
+              <h1>Aprimore
+                Suas Habilidades Com Os Nossos Cursos
+              </h1>
             </div>
-            <div>
-                {/*img */}
+            <div className='button-presentation'>
+              <button >Vamos Aprender</button>
             </div>
-        </div>
-
-        <ul>
-                <li><span>+100</span>Famílias Ajudadas </li>
-                <li>|</li>
-                <li><span>+10</span>Casas Entregues </li>
-                <li>|</li>
-                <li><span>+20</span>Cursos Dispníveis</li>
+          </div>
+        </main>
+        <figure className='img-presentation'>
+          <img src={FotoCurso} />
+        </figure>
+      </div>
+      <section >
+        <ul className='section-black'>
+          <li><span>+100</span>Famílias Ajudadas </li>
+          <li>|</li>
+          <li><span>+10</span>Casas Entregues </li>
+          <li>|</li>
+          <li><span>+20</span>Cursos Dispníveis</li>
         </ul>
-    {/* Fazer outro file para meus cursos */}
-    {/* Fazer outro para todos os cursos */}
+        {/* Fazer outro file para meus cursos */}
+        {/* Fazer outro para todos os cursos */}
 
-    {/*Footer */}
-    </section>
+        {/*Footer */}
+      </section>
 
     </>
   )
