@@ -5,6 +5,8 @@ import { AbouteMe } from '../components/AbouteMe'
 import { Value } from '../components/Value'
 import { Footer } from '../components/Footer'
 import { Evidence } from '../components/Evidence'
+import { Donation } from '../components/Donationls'
+import { Actions } from '../components/Actions'
 import './stylespage/initial.css'
 
 
@@ -21,6 +23,8 @@ export const Initial = () => {
           <Value />
           <Evidence />
         </div>  
+        <Donation />
+        <Actions />
         <footer>
           <Footer />
         </footer>

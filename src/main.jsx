@@ -5,6 +5,9 @@ import { Initial } from './pages/Initial.jsx'
 import { Login } from './pages/login/Login.jsx'
 import React from 'react'
 import { Eventss } from './pages/Eventsl/Eventss.jsx'
+import { Cousers } from './pages/Cousers/Cousers.jsx'
+import { Admin } from './pages/adm/Admin_nav.jsx'
+import { Register } from './pages/register/Registerl.jsx'
 import './style.css'
 
 const  router = createBrowserRouter([
@@ -20,6 +23,18 @@ const  router = createBrowserRouter([
       path: '/eventos',
       element: <Eventss/>
     },
+    {
+      path:'/cousers',
+      element: <Cousers />
+    },
+    {
+      path: '/adm',
+      element: <Admin />
+    },
+    {
+      path: '/register',
+      element: <Register />
+    }
   
 ])
 

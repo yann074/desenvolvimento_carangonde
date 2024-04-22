@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Patua+One&display=swap');
+
 .container-texts{
     text-align: center;
     align-items: center;
     margin-bottom: 80px;
+    font-family: 'Inria Sans', sans-serif;
 }
 .h1-principal{
     font-size: 43px;
     margin: 35px;
+    font-family: 'Inria Sans', sans-serif;
+    letter-spacing: 10px;
 }
 .texto-principal{
     font-size: 25px;
@@ -13,31 +18,51 @@
     letter-spacing: 2px;
 }   
 
+.container-div h2{
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.container-div p{
+    font-family: 'Inria Sans', sans-serif;
+}
+
 .grid-container{
     display: grid;
-    margin-bottom: 200px;
-    
+    background-color: #ECECEC;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
 }
 .container-div{
-    
     display: grid;
     grid-template-columns: 25% 25%;
-    row-gap: 30px;
+    row-gap: 40px;
 }
 .vazio-branco{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: black;
-    width: 1px;
-    margin-left: 17%;
-    color: white;
-    height: 90px;
-    padding-left: 40px;
-    padding-right: 100px;
-    border-radius: 8px;
+    height: 120px;
+    width: 160px;
+    background-color: #ffffff;
+    margin: 0 0 0 -40vh;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 12px black;
 }
 .vazio-branco span{
     color: gold;
-    font-size: 20px;
+    font-size: 40px;
+    font-family: 'Inria Sans', sans-serif;
+}
 
+.vazio-branco h1{
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.texto-eventos{
+    width: 300px;
+    margin: 0 0 0 -18vh;
 }

@@ -12,7 +12,8 @@
 }
 
 .container-text-us{
-    width: 110vh;
+    width: 800px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     margin-right: 10vh;

@@ -2,10 +2,11 @@
 
 .container-deleted{
     display: none;
+    position: absoluteg;
 }
 
 .container-value{
-    height: 820px;
+    height: 780px;
 }
 
 .container-value h2{
@@ -19,6 +20,7 @@
 }
 
 .container-blocks{
+    cursor: move;
     display: flex;
     flex-direction: row;
     text-align: center;
