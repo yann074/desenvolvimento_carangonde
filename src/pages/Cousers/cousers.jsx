@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 import { Headerl } from '../../components/Headerl'
 import './Cousers.css'
-import FotoCurso from '../../assets/image-curso.svg'
-=======
+import { MyCourses } from './static/MyCourses'
+import { Footer } from '../../components/Footer'
+
 import React from 'react'
->>>>>>> 7c27b4075ca34290d5a013b1ef14c5b972be7c07
 export const Cousers = () => {
   return (
     <>
@@ -23,7 +22,6 @@ export const Cousers = () => {
           </div>
         </main>
         <figure className='img-presentation'>
-          <img src={FotoCurso} />
         </figure>
       </div>
       <section >
@@ -34,10 +32,9 @@ export const Cousers = () => {
           <li>|</li>
           <li><span>+20</span>Cursos Dispníveis</li>
         </ul>
-        {/* Fazer outro file para meus cursos */}
-        {/* Fazer outro para todos os cursos */}
+        <MyCourses />
 
-        {/*Footer */}
+        <Footer />
       </section>
 
     </>
