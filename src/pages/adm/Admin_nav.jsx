@@ -4,28 +4,32 @@ import human from "../../assets/human.svg"
 import calen from "../../assets/calen.svg"
 import profile from "../../assets/profile.svg"
 import { Peoples } from './Peoples'
+import { Footer } from '../../components/Footer'
+import './Admin_nav.css' 
+
 
 export const Admin = () => {
   return (
     <>
-        <section>
+       <header className='container-header-main'>
             <div>
-                <nav>
-                    <div>
-                        <img src={logo} alt="Logo carangonde" />
-                        <h2>Instituto Carangondé Cidadania</h2>
-                        <button>Página Inicial</button>
-                    </div>
+                <nav className='container-headeradm'>
+                    <img src={logo} alt="" />
+                    <h2>Instituto Carangondé Cidadania</h2>
                     <ul>
-                        <li><img src={human} alt="" />Inscritos</li>
-                        <li><img src={calen} alt="" /> Calendário</li>
-                        <li><img src={profile} alt="" /> Perfil do Adm</li>
+                        <li > <img  src={human} alt="" /> <a href="" className='componets_adm'>Inscritos</a></li>
+                        <li ><img src={calen} alt="" /> <a href="" className='componets_adm'>Calendário</a></li>
+                        <li ><img src={profile} alt="" /> <a href="" className='componets_adm'>Perfil do Adm</a></li>
                     </ul>
                 </nav>
-                <Peoples />
             </div>
-          
-            </section>
+            <button>PÁGINA INICIAL</button>
+       </header>
+
+       <footer className='footer-admin'>
+            
+            <Footer/>
+        </footer>
     </>
   )
 }
