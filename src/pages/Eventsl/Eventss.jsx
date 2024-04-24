@@ -3,6 +3,7 @@ import { Headerl } from '../../components/Headerl'
 import { Footer } from '../../components/Footer'
 import '../stylespage/initial.css'
 import '../../pages/stylespage/initial.css'
+
 import './Eventos.css'
 export const Eventss = () => {
   return (

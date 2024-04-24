@@ -43,3 +43,48 @@
     font-size: 38px;
     margin: 10vh 0 0 auto;
 }
+
+@media screen and (max-width: 767px) {
+    .container-section-presentation{
+        width: auto; 
+        flex-direction: column;
+        display: flex;
+        height: 440px !important;
+        overflow-x: hidden;
+        
+    }
+
+   /* .img-presentation{
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    
+    .img-presentation img{
+     display: none;
+    }
+    
+    .container-presentation{
+        display: none;
+    }
+    
+    .container-text-presentation h1{
+        font-size: 16px !important;
+        text-align: center;
+    }
+    
+    .text-yellow{
+        color: #F6B60D
+    }
+    
+    .button-presentation button{
+        width: 200px !important;
+        height: 40px !important;
+        background-color: #F6B60D;
+        border: none;
+        border-radius: 20px;
+        font-family: "Patua One", serif;
+        font-size: 16px !important;
+    }
+}

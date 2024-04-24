@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
 
 .container-deleted{
-    display: none;
-    position: absoluteg;
+    display: none;  
 }
 
 .container-value{
@@ -45,4 +44,57 @@
 .container-blocks img{
     width: 180px;
     height: 180px;
+}
+
+@media screen and (max-width: 767px) { 
+
+    .container-deleted{
+        display: none;
+        font-size: 12px;
+        overflow-x: hidden;
+
+    }
+    
+    .container-value{
+        height: 400px;
+        overflow-x: hidden;
+    }
+    
+    .container-value h2{
+        font-family: "Patua One", serif;
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .container-blocks{
+        cursor: move;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: -24vh auto 0 auto;
+        width: auto;
+        font-family: "Nunito", sans-serif;
+        font-size: 30px;
+    }
+    
+    .container-blocks p{
+        margin: 10px;
+        font-size: 16px;
+    }
+    
+    .bg-yellow{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        background-color: #FFC326;
+        border-radius: 50%;
+    }
+    
+    .container-blocks img{
+        width: 60px;
+        height: 60px;
+    }
 }

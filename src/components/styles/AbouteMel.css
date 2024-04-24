@@ -39,3 +39,47 @@
     width: 440px;
     margin: 10vh;
 }
+
+
+@media screen and (max-width: 767px) {
+    .container-us{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 450px;
+        overflow-x: hidden;
+        margin: 0vh 0 0 10vh;
+    
+    }
+    
+    .container-text-us{
+        width: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vh;
+    }
+    
+    .container-text-us h2{
+        font-family: "Patua One", serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        margin-bottom: 5vh;
+    }
+    
+    .container-text-us p{
+        font-family: "Inria Sans", sans-serif;
+        margin: auto;
+        text-align: justify;
+        font-size: 18px;
+    }
+    
+    .container-img-action img{
+        display: none;
+    }
+    
+
+}

@@ -48,3 +48,27 @@ header{
     border-radius: 20px;
     box-shadow: 10px black;
 }
+
+
+@media screen and (max-width: 767px) {
+   
+    .container-options{
+        display: none;
+    }
+
+    .container-logo{
+    display: flex;
+    width: 100px;
+    padding: 10px 10px;
+}
+.container-logo img{
+    width: 50px;
+    height: 60px;
+}
+.container-logo h2{
+    font-size: 12px;
+    font-family: "Inria Sans", sans-serif;
+    margin: auto;
+    padding: 0px 20px;
+}
+}

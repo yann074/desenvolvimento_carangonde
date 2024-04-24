@@ -3,7 +3,6 @@
 .container-texts{
     text-align: center;
     align-items: center;
-    margin-bottom: 80px;
     font-family: 'Inria Sans', sans-serif;
 }
 .h1-principal{
@@ -65,4 +64,74 @@
 .texto-eventos{
     width: 300px;
     margin: 0 0 0 -18vh;
+}
+
+@media screen and (max-width: 767px) {
+    .container-texts{
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0px;
+        font-family: 'Inria Sans', sans-serif;
+        height: 200px;
+        overflow-x: hidden;
+    }
+    .h1-principal{
+        font-size: 20px;
+        font-family: 'Inria Sans', sans-serif;
+        letter-spacing: 10px;
+    }
+    .texto-principal{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }   
+    
+    .container-div h2{
+        font-family: 'Inria Sans', sans-serif;
+    }
+    
+    .container-div p{
+        font-family: 'Inria Sans', sans-serif;
+    }
+    
+    .grid-container{
+        display: grid;
+        background-color: #ECECEC;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+    .container-div{
+        display: grid;
+        grid-template-columns: 25% 25%;
+        row-gap: 40px;
+    }
+    .vazio-branco{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 120px;
+        width: 160px;
+        background-color: #ffffff;
+        margin: 0 0 0 -40vh;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 2px 2px 12px black;
+    }
+    .vazio-branco span{
+        color: gold;
+        font-size: 40px;
+        font-family: 'Inria Sans', sans-serif;
+        display: block;
+    }
+    
+    .vazio-branco h1{
+        font-family: 'Inria Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    
+    .texto-eventos{
+        width: 300px;
+        margin: 0 0 0 -18vh;
+    }
 }

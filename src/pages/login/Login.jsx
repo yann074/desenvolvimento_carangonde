@@ -19,10 +19,12 @@ export const Login = () => {
             <input type="password" placeholder='Digite sua senha'/>
             <input type="password" placeholder='Confirmar senha' />
             {/* <button className='entrar'>ENTRAR</button> */}
-            <button>
+            <button className='entrar'>
               <Link to={'/eventos'}> Entrar</Link>
             </button>
-            <Link to={'/register'}>Esqueci Minha Senha</Link>
+            <button className='esq_pass'>
+              <Link to={'/register'}>Esqueci Minha Senha</Link>
+            </button>
             <h5>NÃO TEM CONTA? CADASTRE-SE AQUI</h5>
         </div>
     </section>

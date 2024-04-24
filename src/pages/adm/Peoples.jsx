@@ -1,5 +1,5 @@
 import React from 'react'
-import { Peoplesinsc } from './Peoplesinsc'
+import { Peoplesinsc } from './Peoplesjson/Peoplesinsc'
 
 export const Peoples = () => {
   return (

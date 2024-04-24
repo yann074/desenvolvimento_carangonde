@@ -12,8 +12,7 @@ export const Cousers = () => {
         <main className='container-main-presentation'>
           <div className='container-presentation'>
             <div className='container-text-presentation'>
-              <h1>Aprimore
-                Suas Habilidades Com Os Nossos Cursos
+              <h1><span className='outline-yellow'>Aprimore</span> Suas Habilidades Com Os <span className='outline-yellow'>Nossos Cursos</span>
               </h1>
             </div>
             <div className='button-presentation'>

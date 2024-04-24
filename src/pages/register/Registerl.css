@@ -109,3 +109,116 @@
     margin-top: 10px;
     text-align: center;
 }
+
+
+@media screen and (max-width: 767px) {
+    .container_register{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        font-family: 'Inria Sans', sans-serif;
+        background-image: url('../../assets/bg_gray.svg');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .container_register_apresentation{
+        height: 70vh;
+        width: 40vw;
+        background-color: #f0f0f0;
+    }
+    
+    .container_register_apresentation h1{
+        color: white;
+        font-size: 18px;
+        width: 20vw;
+    }
+    
+    .container_register_apresentation h3{
+        color: #F6B60D;
+        font-size: 12px;
+        text-align: center;
+        width: 10em;
+        margin-top: 1em;
+    }
+    
+    .container_register_op{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        width: 50vw;
+    }
+    
+    .container_register_op h2{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+    }
+    
+    .container_register_op {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .entrar{
+        width: 80px !important;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #F6B60D;
+        color: white;
+        text-decoration: none;
+        font-size: 12px !important;
+        cursor: pointer;
+    }
+    
+    .google{
+        width: 80px !important;
+        height: 20px;
+        padding: 0 !important;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: transparent;
+        color: black;
+        font-size: 12px !important;
+        cursor: pointer;
+    }
+      
+    .container_register_op input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid black;
+        border-bottom-width: 2px;
+        outline: 0;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+      
+    .container_register_op h5 {
+        font-size: 8px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .esq_pass{
+        border: none;
+        background-color: transparent;
+        font-size: 12px;
+    }
+    
+
+}

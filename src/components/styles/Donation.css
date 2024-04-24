@@ -37,3 +37,46 @@
     width: 80vw;
     font-size: 30px;
 }
+
+@media screen and (max-width: 767px) {
+    
+.container-pix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    height: 200px;
+    width: auto;
+    font-family: 'Inria Sans', sans-serif;
+    margin: 5%;
+}
+
+.container-pix h4{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;    
+}
+
+.container-img-nmr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+.container-img-nmr h6{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.container-img-nmr img{
+    width: 120px;
+    height: 120px;
+}
+}
