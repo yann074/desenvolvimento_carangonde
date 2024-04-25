@@ -17,6 +17,7 @@
   
     flex: none;
     box-shadow: 1px 1px 18px ;
+
 }
 
 .container .carousel .item .image img{
@@ -26,6 +27,7 @@
 }
 
 .container .carousel .item .info{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
 
@@ -53,17 +55,18 @@
     margin: 10px 0;
     
 }
-.container .carousel .item .info .oldPrice{
+.container .carousel .item .info .desc{
     font-size: 1rem;
     flex-grow: 1;
     color: black;
 }
 
-.container .carousel .item .info .Price{
+.container .carousel .item .info .tempo{
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: aqua;
+    width: 140px;
+    background-color: rgb(240, 9, 9);
 }
 
 .container .buttons button{

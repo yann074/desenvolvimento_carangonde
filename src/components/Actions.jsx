@@ -9,26 +9,40 @@ export const Actions = () => {
   return (
     <>
     <section className='sections-actions'>
-        <h2>O que fazemos</h2>
-        <h6>Na nossa ONG, sabemos que o conhecimento é o poder que 
-            impulsiona mudanças reais. É hora de fazer a diferença</h6>
+        <div className='div-action'>
+            <h2>O que fazemos</h2>
+            <h6>Na nossa ONG, sabemos que o conhecimento é o poder que
+                impulsiona mudanças reais. É hora de fazer a diferença</h6>
+        </div>
 
-            <div>
-                <div>
-                    <img src={group} alt="" />
-                    <h2>CIDADANIA E REDE<span><img src={sum} alt="" /></span></h2>
+            <div className='container-actions'>
+                <div className='op'>
+                    <img src={group} alt="" className='img' />
+                    <div  className='op-text'>
+                        <h2>CIDADANIA E REDE</h2>
+                        <span className='sum-txt'><img src={sum} alt="" /></span>
+                    </div>
                 </div>
-                <div>
-                    <img src={house} alt="" />
-                    <h2>CONSTRUÇÃO DE UNIDADES HABITACIONAIS <span><img src={sum} alt="" /></span> </h2>
+                <div className='op'>
+                    <img src={house} alt="" className='img' />
+                    <div className='op-text'>
+                        <h2>CONSTRUÇÃO DE UNIDADES HABITACIONAIS </h2>
+                        <span className='sum-txt'><img src={sum} alt="" /></span>
+                    </div>
                 </div>
-                <div>
-                    <img src={env} alt="" />
-                    <h2>IDENTIDADE E MEIO AMBIENTE <span><img src={sum} alt="" /></span> </h2>
+                <div className='op'>
+                    <img src={env} alt=""  className='img' />
+                    <div  className='op-text'>
+                        <h2>IDENTIDADE E MEIO AMBIENTE</h2>
+                        <span className='sum-txt'><img src={sum} alt="" /></span>
+                    </div>
                 </div>
-                <div>
-                    <img src={human} alt="" />
-                    <h2>CAPACITAÇÃO E EMPODERAMENTO<span><img src={sum} alt="" /></span> </h2>
+                <div className='op'>
+                    <img src={human} alt="" className='img'  />
+                    <div  className='op-text'>
+                        <h2>CAPACITAÇÃO E EMPODERAMENTO</h2>
+                        <span className='sum-txt'><img src={sum} alt="" /></span>
+                    </div>
                 </div>
             </div>
     </section>

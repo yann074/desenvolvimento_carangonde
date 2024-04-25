@@ -40,16 +40,16 @@
     text-decoration-skip-ink: none;
 }
 
-.button-presentation button{
-    width: 288px;
-    height: 61px;
+.button-presentationnnn {
+    width: 308px;
+    height: 60px;
     background-color: #F6B60D;
     border: none;
     border-radius: 20px;
     font-family: "Patua One", serif;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 400;
-    margin: 10vh auto auto -20vh;
+    margin: 5vh auto auto 2vw;
 }
 
 

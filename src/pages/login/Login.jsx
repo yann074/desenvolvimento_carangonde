@@ -32,6 +32,7 @@ export const Login = () => {
 
   return (
     <>
+    <div data-aos="fade-right">
       <section className='container_login'>
         <div className='container_login_apresentation'>
           <h1>Bem Vindo De Volta</h1>
@@ -54,7 +55,10 @@ export const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           {errorMessages.password && <p className="error-message">{errorMessages.password}</p>}
-          <button className='entrar' onClick={validateForm}>ENTRAR</button>
+      
+            <button className='entrar' onClick={validateForm}>ENTRAR</button>
+          
+          
           <button className='esq_pass'>
             <Link to={'/register'}>Esqueci Minha Senha</Link>
           </button>
@@ -63,6 +67,7 @@ export const Login = () => {
           </Link>
         </div>
       </section>
+      </div>
     </>
   );
 };

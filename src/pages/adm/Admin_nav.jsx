@@ -2,6 +2,8 @@ import React from 'react'
 import logo from "../../assets/logo_carangonde.svg"
 import human from "../../assets/human.svg"
 import calen from "../../assets/calen.svg"
+
+import { Link } from 'react-router-dom'
 import profile from "../../assets/profile.svg"
 import { Peoples } from './Peoples'
 import { Footer } from '../../components/Footer'
@@ -27,7 +29,7 @@ export const Admin = () => {
                     </ul>
                 </nav>
             </div>
-            <button>PÁGINA INICIAL</button>
+            <Link to={"/"} className='button-home'><p>Página Inicial</p></Link>
        </header>
 
        <div>

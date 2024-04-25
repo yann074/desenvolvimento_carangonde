@@ -5,7 +5,10 @@ import './styles/AbouteMel.css'
 export const AbouteMe = () => {
   return (
     <>
-    <section className='container-us'>
+    <div data-aos="fade-right"
+     data-aos-delay="150"
+     data-aos-duration="800">
+    <section className='container-us' id='nos'>
         <div className='container-img-action'>
             <img src={img_action} alt="" />
         </div>
@@ -17,6 +20,7 @@ export const AbouteMe = () => {
                 tradicionais, apoio a promoção de ações sociais que promovam a cidadania.</p>
         </div>
     </section>
+    </div>
     </>
   )
 }

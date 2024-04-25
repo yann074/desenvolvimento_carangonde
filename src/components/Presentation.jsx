@@ -1,12 +1,14 @@
 import React from 'react'
 import img_1 from '../assets/img_1.svg'
 import './styles/Presentation.css'
+import { Link } from 'react-router-dom'
 
 
 
 export const Presentation = () => {
   return (
     <>
+    <div data-aos="fade-right">
     <section className='container-section-presentation'>
         <div className='container-presentation'>
             <div className='container-text-presentation'>
@@ -15,14 +17,14 @@ export const Presentation = () => {
                 </h1>
             </div>
             <div className='button-presentation'>
-                <button>Cadastre-se</button>
+                <Link to="/register">Cadastre-se</Link>
             </div>
         </div>
         <div className='img-presentation'>
             <img src={img_1} alt="aula" />
         </div>
     </section>
-
+    </div>
     
     </>
   )

@@ -15,8 +15,8 @@ export const Cousers = () => {
               <h1><span className='outline-yellow'>Aprimore</span> Suas Habilidades Com Os <span className='outline-yellow'>Nossos Cursos</span>
               </h1>
             </div>
-            <div className='button-presentation'>
-              <button >Vamos Aprender</button>
+            <div className='button-presentationnnn'>
+            <a href="#cursos">Vamos Aprender</a>
             </div>
           </div>
         </main>
@@ -24,6 +24,7 @@ export const Cousers = () => {
         </figure>
       </div>
       <section >
+      <div data-aos="fade-right">
         <ul className='section-black'>
           <li><span>+100</span>Famílias Ajudadas </li>
           <li>|</li>
@@ -31,7 +32,10 @@ export const Cousers = () => {
           <li>|</li>
           <li><span>+20</span>Cursos Dispníveis</li>
         </ul>
+        </div>
+        <div data-aos="fade-right">
         <MyCourses />
+        </div>
 
         <Footer />
       </section>

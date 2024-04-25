@@ -4,6 +4,7 @@ import './styles/Evidence.css'
 export const Evidence = () => {
   return (
     <>
+    <div data-aos="fade-right">
     <section className='container-evidence'>
             <h2 className='text-dep'>Depoimentos</h2>
 
@@ -43,6 +44,7 @@ export const Evidence = () => {
                 </div>
             </div>
     </section>
+    </div>
     </>
   )
 }

@@ -29,10 +29,10 @@
     width: 23%;
 }
 
-.container-header-main button{
+.container-header-main .button-home{
     float: right;
-    width: 172px;
-    height: 54px;
+    width: 202px;
+    height: 60px;
     background-color: #EA9B3A;
     border: none;
     border-radius: 30px;
@@ -42,7 +42,9 @@
     margin: auto 6vw auto auto;
     box-shadow: 1px 1px 10px black;
 }
-
+.container-header-main .button-home p{
+    margin: 20px;
+}
 .container-header-logo h2{
     width: 10px;
     font-size: 20px;

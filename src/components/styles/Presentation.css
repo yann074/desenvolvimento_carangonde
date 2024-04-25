@@ -33,15 +33,19 @@
     color: #F6B60D
 }
 
-.button-presentation button{
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.button-presentation {
+
     width: 288px;
-    height: 61px;
+    height: 60px;
     background-color: #F6B60D;
     border: none;
     border-radius: 20px;
     font-family: "Patua One", serif;
     font-size: 38px;
-    margin: 10vh 0 0 auto;
 }
 
 @media screen and (max-width: 767px) {

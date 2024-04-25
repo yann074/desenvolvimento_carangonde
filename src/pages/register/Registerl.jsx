@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import './Registerl.css';
 
 export const Register = () => {
@@ -40,7 +40,7 @@ export const Register = () => {
       return false;
     }
 
-    // Limpa a mensagem de erro se todas as validações passarem
+    
     setErrorMessage('');
     return true;
   };
@@ -49,6 +49,7 @@ export const Register = () => {
 
   return (
     <>
+    <div data-aos="fade-right">
       <section className='container_register'>
         <div className='container_register_apresentation'>
           <h1>Crie Sua Conta</h1>
@@ -99,11 +100,17 @@ export const Register = () => {
             onChange={(e) => setBirthdate(e.target.value)}
             required
           />
-          {/* Exibe a mensagem de erro abaixo do formulário */}
+          
           {errorMessage && <p className="error-message">{errorMessage}</p>}
-          <button className='entrar' onClick={validateForm}>CADASTRAR</button>
+         
+            <button className='entrar' onClick={validateForm}>CADASTRAR</button>
+        
+          
+          
+          
         </div>
       </section>
+      </div>
     </>
   );
 };

@@ -35,7 +35,7 @@ export const MyCourses = () => {
     if (!data || !data.length) return null;
 
     return (
-        <div className='container'>
+        <div className='container' id='cursos'>
             <div className='logo'>
                 <h1>CURSOS</h1>
             </div>
@@ -49,8 +49,8 @@ export const MyCourses = () => {
                             </div>
                             <div className='info'>
                                 <span className='name'>{name}</span>
-                                <span className='oldPrice'>{desc}</span>
-                                <span className='price'>{tempo}</span>
+                                <span className='dec'>{desc}</span>
+                                <span className='tempo'>{tempo}</span>
                             </div>
                         </div>
                     );

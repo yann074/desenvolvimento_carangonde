@@ -4,7 +4,7 @@ import './styles/Donation.css'
 
 export const Donation = () => {
   return (
-    <>
+    <>  <div data-aos="fade-right">
         <section className='container-pix'>
             <h4>FAÇA A DIFERENÇA COM SUA DOAÇÃO</h4>
 
@@ -13,6 +13,7 @@ export const Donation = () => {
                 <h6>Telefone: (xx) xxxx-xxxx</h6>
             </div>
         </section>
+        </div>
     </>
   )
 }
