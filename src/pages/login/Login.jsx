@@ -24,7 +24,7 @@ export const Login = () => {
     if (!isValid) {
       setErrorMessages(errors);
     } else {
-      console.log("Autenticação bem-sucedida. Redirecionando para a tela inicial...");
+      alert("Formulário válido. Enviando dados...");
     }
 
     return isValid;
@@ -54,10 +54,7 @@ export const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           {errorMessages.password && <p className="error-message">{errorMessages.password}</p>}
-          {/* Usando Link para direcionar para a tela inicial */}
-          <Link to="/">
-            <button className='entrar' onClick={validateForm}>ENTRAR</button>
-          </Link>
+          <button className='entrar' onClick={validateForm}>ENTRAR</button>
           <button className='esq_pass'>
             <Link to={'/register'}>Esqueci Minha Senha</Link>
           </button>
