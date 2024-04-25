@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import './Registerl.css';
 
 export const Register = () => {
@@ -40,16 +40,12 @@ export const Register = () => {
       return false;
     }
 
-    
+    // Limpa a mensagem de erro se todas as validações passarem
     setErrorMessage('');
     return true;
   };
 
-  const handleSubmit = () => {
-    if (validateForm()) {
-      console.log("Formulário válido. Redirecionando para a tela inicial...");
-    }
-  };
+
 
   return (
     <>
@@ -103,11 +99,9 @@ export const Register = () => {
             onChange={(e) => setBirthdate(e.target.value)}
             required
           />
-          {}
+          {/* Exibe a mensagem de erro abaixo do formulário */}
           {errorMessage && <p className="error-message">{errorMessage}</p>}
-          <Link to="/">
-            <button className='entrar' onClick={handleSubmit}>CADASTRAR</button>
-          </Link>
+          <button className='entrar' onClick={validateForm}>CADASTRAR</button>
         </div>
       </section>
     </>
