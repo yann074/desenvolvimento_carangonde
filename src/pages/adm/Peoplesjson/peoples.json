@@ -1,16 +1,23 @@
 [
     {
-        "name": "Yann Smith",
-        "cursos": "Informatica",
-       "tell": "7499964932",
-        "email": "yannsmith294201@gmail.com",
-        "cpf": "942941..19391931"
-    },
-    {
         "name": "Emanuel Lima",
-        "cursos": "Informatica, KDsaoKDSOA",
+        "cursos": "Informatica",
        "tell": "291931391",
         "email": "emanuel@gmail.com",
-        "cpf": "942941..31931"
+        "cpf": "94294131931"
+    },
+    {
+        "name": "Yann Smith",
+        "cursos": "Informática",
+       "tell": "757283823423",
+        "email": "yannsmith@gmail.com",
+        "cpf": "01202138945"
+    },
+    {
+        "name": "ME CHUPEM SEUS FDP",
+        "cursos": "MAMEM ATÉ O CAROÇO SEUS FDP",
+       "tell": "SEUS SEM PAIS",
+        "email": "ERA DENTOOOOOOOOO",
+        "cpf": "SEUS FDP"
     }
 ]

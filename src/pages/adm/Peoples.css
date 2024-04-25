@@ -1,0 +1,16 @@
+.container-table{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 30vw;
+}
+
+.grid-p{
+    margin: auto;
+    margin: 2em auto auto 19em;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}

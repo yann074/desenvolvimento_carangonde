@@ -1,16 +1,17 @@
 import React from 'react'
 import { Peoplesinsc } from './Peoplesjson/Peoplesinsc'
+import './Peoples.css'
 
 export const Peoples = () => {
   return (
    <>
    <table>
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Cursos</th>
-          <th>Telefone</th>
-          <th>Email</th>
+      <thead className='grid-p'>
+        <tr className='container-table' >
+          <th>NOME</th>
+          <th>CURSOS</th>
+          <th>TELEFONE</th>
+          <th>EMAIL</th>
           <th>CPF</th>
         </tr>
       </thead>

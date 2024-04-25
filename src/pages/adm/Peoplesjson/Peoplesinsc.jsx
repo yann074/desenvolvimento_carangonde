@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import '../Peoplesjson/Peoples.css'
 
 export const Peoplesinsc = () => {
   const [data, setData] = useState([]);
@@ -19,11 +20,11 @@ export const Peoplesinsc = () => {
   return (
     <>
     <section>
-        <table>
+        <table  className='container-people'>
           {data.map(item=>{
-            const {name, cursos, tell, email, cpf} = item
+            const  {name, cursos, tell, email, cpf} = item
             return(
-              <tr>
+              <tr className='grid-p'>
                 <th>{name}</th>
                 <th>{cursos}</th>
                 <th>{tell}</th>
