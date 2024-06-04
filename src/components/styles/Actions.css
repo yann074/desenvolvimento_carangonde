@@ -10,7 +10,7 @@
 .container-actions{
     margin: 4%;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -46,6 +46,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 250px;
+    margin: 0 40px 0 0;
     
 }
 

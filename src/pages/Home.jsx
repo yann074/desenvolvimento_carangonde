@@ -22,7 +22,7 @@ export const Initial = () => {
         <div className='bg-gray'>
           <Value />
           <Evidence />
-        </div>  
+        </div> 
         <Donation />
         <Actions />
         <footer>

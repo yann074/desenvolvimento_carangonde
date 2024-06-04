@@ -5,7 +5,7 @@
 }
 
 .container-value{
-    height: 780px;
+    height: 1080px;
 }
 
 .container-value h2{
@@ -45,6 +45,7 @@
     width: 180px;
     height: 180px;
 }
+
 
 @media screen and (max-width: 767px) { 
 
