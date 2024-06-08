@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 // paginas
 import { Initial } from './pages/Home.jsx'
-import { Login } from './pages/login/Login.jsx'
+import {Login } from './pages/login/Login.jsx'
 import React from 'react'
 import { Eventss } from './pages/Eventsl/Eventss.jsx'
 import { Cousers } from './pages/Cousers/cousers.jsx'
@@ -21,7 +21,7 @@ const  router = createBrowserRouter([
       element: <Initial/>,
     },  
     {
-      path:'/login',
+      path:'/entrar',
       element: <Login/>,
     },
     {

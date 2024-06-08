@@ -1,39 +1,39 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import './Loginl.css';
 
 export const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessages, setErrorMessages] = useState({});
 
-  const validateForm = () => {
-    let errors = {};
-    let isValid = true;
+  const [form, setForm] = useState({
+    email: '',
+    password: ''
+  });
 
-    if (!email || !email.includes('@')) {
-      errors.email = "Por favor, digite um email válido.";
-      isValid = false;
-    }
-
-    if (!password) {
-      errors.password = "Por favor, digite sua senha.";
-      isValid = false;
-    }
-
-    if (!isValid) {
-      setErrorMessages(errors);
-    } else {
-      alert("Formulário válido. Enviando dados...");
-    }
-
-    return isValid;
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    axios.post('http://localhost/backend/public/login.php', form)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error('Houve um erro!', error);
+      });
+  };
+ 
   return (
     <>
     <div data-aos="fade-right">
-      <section className='container_login'>
+      <form className='container_login' onSubmit={handleSubmit}>
         <div className='container_login_apresentation'>
           <h1>Bem Vindo De Volta</h1>
           <h3>Entre Para Acessar Nosso Conteúdo</h3>
@@ -42,31 +42,30 @@ export const Login = () => {
           <h2>Login</h2>
           <button className='google'>GOOGLE</button>
           <input
+            name='email'
             type="email"
             placeholder='Digite seu email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleChange}
+            required
           />
-          {errorMessages.email && <p className="error-message">{errorMessages.email}</p>}
-          <input
+           <input
+            name='password'
             type="password"
             placeholder='Digite sua senha'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={handleChange}
+            required
           />
-          {errorMessages.password && <p className="error-message">{errorMessages.password}</p>}
-      
-            <button className='entrar' onClick={validateForm}>ENTRAR</button>
+            <button className='entrar' type="submit">ENTRAR</button>
           
           
           <button className='esq_pass'>
-            <Link to={'/register'}>Esqueci Minha Senha</Link>
+            <Link to={'/forgot-password'}>Esqueci Minha Senha</Link>
           </button>
           <Link to={'/register'}>
             <h5>NÃO TEM CONTA? CADASTRE-SE AQUI</h5>
           </Link>
         </div>
-      </section>
+      </form>
       </div>
     </>
   );

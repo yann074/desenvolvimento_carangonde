@@ -1,0 +1,87 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    animation-name: modal-open;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes modal-open {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.close2 {
+    color: #888;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image2 img {
+    width: 50%;
+    height: auto;
+}
+
+.modal-info2 {
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.download-button{
+    background-color: #EA9B3A;
+    font-family: Patua one, sans-serif;
+    font-size: 20px;
+    height: 6vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto auto auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s; transform: .2s scale(1);
+}
+
+.download-button:hover{
+    transform: scale(1.1);
+}
+
+.download-button img{
+    margin: 0 -15px 0 0;
+}
