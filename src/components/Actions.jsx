@@ -38,32 +38,32 @@ export const Actions = () => {
         </div>
 
         <div className='container-actions'>
-          <div className='op' onClick={(e) => openModal('CIDADANIA E REDE', 'Nas vastas extensões rurais da Bahia, muitas famílias enfrentam desafios diários para acessar serviços básicos  como cidadãos. Nossa Instituição está empenhada em estender e juntar várias mãos solidárias nas diferentes comunidades que atuamos, oferecendo apoio em questões educacionais, ambientais, habitacionais e sociais.', '#FFB6C1', group, e)}>
+          <div id='bg-green' className='op'>
             <img src={group} alt="" className='img' />
             <div className='op-text'>
               <h2>CIDADANIA E REDE</h2>
-              <span className='sum-txt'><img src={sum} alt="" /></span>
+              <span className='sum-txt' onClick={(e) => openModal('CIDADANIA E REDE', 'Nas vastas extensões rurais da Bahia, muitas famílias enfrentam desafios diários para acessar serviços básicos  como cidadãos. Nossa Instituição está empenhada em estender e juntar várias mãos solidárias nas diferentes comunidades que atuamos, oferecendo apoio em questões educacionais, ambientais, habitacionais e sociais.', '#759F2D', group, e)}><img src={sum} alt="" /></span>
             </div>
           </div>
-          <div className='op' onClick={(e) => openModal('CONSTRUÇÃO DE UNIDADES HABITACIONAIS', 'Nos dedicamos a construir unidades habitacionais nas áreas rurais da Bahia, proporcionando um refúgio estável e confortável para aqueles que mais necessitam.', '#ADD8E6', house, e)}>
+          <div id='bg-blue' className='op'>
             <img src={house} alt="" className='img' />
             <div className='op-text'>
               <h2>CONSTRUÇÃO DE UNIDADES HABITACIONAIS</h2>
-              <span className='sum-txt'><img src={sum} alt="" /></span>
+              <span className='sum-txt' onClick={(e) => openModal('CONSTRUÇÃO DE UNIDADES HABITACIONAIS', 'Nos dedicamos a construir unidades habitacionais nas áreas rurais da Bahia, proporcionando um refúgio estável e confortável para aqueles que mais necessitam.', '#28A4E2', house, e)}><img src={sum} alt="" /></span>
             </div>
           </div>
-          <div className='op' onClick={(e) => openModal('IDENTIDADE E MEIO AMBIENTE', 'Apoiar suas culturas valoriza sua contribuição para a conservação da biodiversidade e promove a harmonia entre humanos e natureza, protegendo territórios naturais', '#90EE90', env, e)}>
+          <div id='bg-yellow' className='op'>
             <img src={env} alt="" className='img' />
             <div className='op-text'>
               <h2>IDENTIDADE E MEIO AMBIENTE</h2>
-              <span className='sum-txt'><img src={sum} alt="" /></span>
+              <span className='sum-txt' onClick={(e) => openModal('IDENTIDADE E MEIO AMBIENTE', 'Apoiar suas culturas valoriza sua contribuição para a conservação da biodiversidade e promove a harmonia entre humanos e natureza, protegendo territórios naturais', '#EA9B3A', env, e)}><img src={sum} alt="" /></span>
             </div>
           </div>
-          <div className='op' onClick={(e) => openModal('CAPACITAÇÃO E EMPODERAMENTO', 'Os cursos oferecem uma chance única de aprender e crescer em suas vidas profissionais. Eles abrem portas para novas habilidades. ', '#FFD700', human, e)}>
+          <div id='bg-green' className='op'>
             <img src={human} alt="" className='img' />
             <div className='op-text'>
               <h2>CAPACITAÇÃO E EMPODERAMENTO</h2>
-              <span className='sum-txt'><img src={sum} alt="" /></span>
+              <span className='sum-txt' onClick={(e) => openModal('CAPACITAÇÃO E EMPODERAMENTO', 'Os cursos oferecem uma chance única de aprender e crescer em suas vidas profissionais. Eles abrem portas para novas habilidades. ', '#759F2D', human, e)}><img src={sum} alt="" /></span>
             </div>
           </div>
         </div>

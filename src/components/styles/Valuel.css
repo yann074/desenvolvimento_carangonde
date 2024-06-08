@@ -1,101 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
 
-.container-deleted{
-    display: none;  
-}
+#root {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .container-value {
+    text-align: center;
+    margin: 100px 0 300px 0;
+    padding: 200px 0 100px 0;
+    font-family: Inria Sans, sans-serif;
+    list-style: none;
+  }
 
-.container-value{
-    height: 1080px;
-}
+  .container-value .value{
+    font-size: 60px;
+    padding-top: 100px;
+  }
+  
+  .container-blocks {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 80vw;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
 
-.container-value h2{
-    font-family: "Patua One", serif;
-    font-size: 47px;
+  .container-blocks p{
+    width: 20vw;
+  }
+  
+  .bg-yellow {
+    background-color: #FFC326;
+    border-radius: 100%;
+    padding: 35px;
+    margin: 100px 0 10px 0;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background-color: #FFC326;
+    color: #000000;
+    font-size: 24px;
+    font-family: Inria Sans, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 80px 0 80px 0;
-    height: 300px;
-}
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, transform 0.5s ease-in-out;
+    width: 440px; 
+  }
 
-.container-blocks{
-    cursor: move;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    font-family: "Nunito", sans-serif;
-    font-size: 30px;
-}
+  .tooltip ul {
+    list-style-type: none; 
+  }
 
-.container-blocks p{
-    margin: 20px;
-}
-
-.bg-yellow{
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    background-color: #FFC326;
-    border-radius: 50%;
-}
-
-.container-blocks img{
-    width: 180px;
-    height: 180px;
-}
+  .tooltip li {
+    margin: 5px 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }  
 
 
-@media screen and (max-width: 767px) { 
-
-    .container-deleted{
-        display: none;
-        font-size: 12px;
-        overflow-x: hidden;
-
-    }
+  @media screen and (max-width: 767px) { 
     
-    .container-value{
-        height: 400px;
-        overflow-x: hidden;
-    }
-    
-    .container-value h2{
-        font-family: "Patua One", serif;
-        font-size: 17px;
-        display: flex;
-        flex-direction: column;
+    .container-value {
         text-align: center;
-        padding: 20px;
-    }
+        margin: 100px 0 300px 0;
+        padding: 200px 0 100px 0;
+        font-family: Inria Sans, sans-serif;
+        list-style: none;
+      }
     
-    .container-blocks{
-        cursor: move;
+    .container-value .value {
+      font-family: "Patua One", serif;
+      font-size: 24px;
+      padding: 0;
+      text-align: center;
+    }
+    .container-blocks {
         display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin: -24vh auto 0 auto;
-        width: auto;
-        font-family: "Nunito", sans-serif;
-        font-size: 30px;
+        justify-content: space-around;
+        margin: auto;
+        width: 80vw;
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+    
+    .container-blocks p {
+      margin: 10px;
+      font-size: 14px;
     }
     
-    .container-blocks p{
-        margin: 10px;
-        font-size: 16px;
+    .bg-yellow {
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      background-color: #FFC326;
+      border-radius: 50%;
     }
     
-    .bg-yellow{
-        width: 200px;
-        height: 200px;
-        padding: 10px;
-        background-color: #FFC326;
-        border-radius: 50%;
+    .container-blocks img {
+      width: 100px;
+      height: 100px;
     }
-    
-    .container-blocks img{
-        width: 60px;
-        height: 60px;
+  
+    .tooltip {
+      width: 200px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
     }
-}
+  }
