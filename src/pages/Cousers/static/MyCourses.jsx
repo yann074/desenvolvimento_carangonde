@@ -2,9 +2,13 @@ import React, { useEffect, useState, useRef } from 'react';
 import "./MyCousers.css"
 import esq from './esquerda.svg'
 import dir from './direita.svg'
+import Modal from '../../../components/ModalCourses';
+
 export const MyCourses = () => {
     const [data, setData] = useState([]);
-    const carousel = useRef(null)
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCourse, setSelectedCourse] = useState(null);
+    const carousel = useRef(null);
 
     useEffect(() => {
         fetch('http://localhost:5173/src/pages/Cousers/static/shoes.json')
@@ -21,16 +25,24 @@ export const MyCourses = () => {
     const handleLeftClick = (e) =>{
         e.preventDefault();
         console.log(carousel.current.offsetWidth);
-        carousel.current.scrollLeft -= carousel.current.offsetfWidth
+        carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
 
     const handleRightClick = (e) =>{
         console.log(carousel.current.offsetWidth);
         e.preventDefault();
-        
-        carousel.current.scrollLeft += carousel.current.offsetWidth
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
 
+    const openModal = (course) => {
+        setSelectedCourse(course);
+        setIsModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedCourse(null);
+    }
 
     if (!data || !data.length) return null;
 
@@ -43,7 +55,7 @@ export const MyCourses = () => {
                 {data.map(item => {
                     const { id, name, desc, tempo, image } = item;
                     return (
-                        <div className='item' key={id}>
+                        <div className='item' key={id} onClick={() => openModal(item)}>
                             <div className='image'>
                                 <img src={image} alt={name} />
                             </div>
@@ -60,6 +72,9 @@ export const MyCourses = () => {
                 <button onClick={handleLeftClick}><img src={esq} alt="" /></button>
                 <button onClick={handleRightClick}><img src={dir} alt="" /></button>
             </div>
+            {isModalOpen && (
+                <Modal course={selectedCourse} closeModal={closeModal} />
+            )}
         </div>
     );
 };
