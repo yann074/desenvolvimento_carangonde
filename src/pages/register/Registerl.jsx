@@ -23,6 +23,7 @@ export const Register = () => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     axios.post('http://localhost/backend/public/register.php', form)
       .then(response => {
         console.log(response.data);

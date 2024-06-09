@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Headerl } from '../../components/Headerl';
+import axios from 'axios';
 import './Cousers.css';
 import { MyCourses } from './static/MyCourses';
 import { Footer } from '../../components/Footer';
@@ -12,6 +13,25 @@ export const Cousers = () => {
     setSelectedCourse(course);
     setIsModalOpen(true);
   };
+  const [cursos, setCursos] = useState([]);
+
+  useEffect(() => {
+    const fetchCursos = async () => {
+      const token = localStorage.getItem('token');
+      try {
+        const response = await axios.get('http://localhost/backend/public/getCursos.php', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        setCursos(response.data);
+      } catch (error) {
+        console.error('Erro ao buscar cursos:', error);
+      }
+    };
+
+    fetchCursos();
+  }, []);
 
   const closeModal = () => {
     setSelectedCourse(null);
@@ -27,6 +47,9 @@ export const Cousers = () => {
             <div className='container-text-presentation'>
               <h1><span className='outline-yellow'>Aprimore</span> Suas Habilidades Com Os <span className='outline-yellow'>Nossos Cursos</span></h1>
             </div>
+            {cursos.map(curso => (
+          <li key={curso.id}>{curso.name}</li>
+             ))}
             <div className='button-presentationnnn'>
               <a href="#cursos">Vamos Aprender</a>
             </div>
