@@ -19,12 +19,23 @@ export const Login = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     axios.post('http://localhost/backend/public/login.php', form)
       .then(response => {
         console.log(response.data);
+        if(response.data.message == "Email e senha corretos"){
+          window.location.href = "http://localhost:5173/coursers";
+        }  
+        if(response.data.message == "Email e senha corretos adm"){
+          window.location.href = "http://localhost:5173/adm";
+        }  
+          else {
+          window.alert("email ou senha errada");
+          console.error('Email ou senha incorretos');
+        }
       })
+      
       .catch(error => {
         console.error('Houve um erro!', error);
       });

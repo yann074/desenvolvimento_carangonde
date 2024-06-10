@@ -18,7 +18,7 @@ export const Headerl = () => {
                     <li><a href="#footer">Contato</a></li>
                 </ul>
                 <button>
-                     <Link to={'/login'}>Entrar</Link>
+                     <Link to={'/entrar'}>Entrar</Link>
                 </button>
                
             </div>

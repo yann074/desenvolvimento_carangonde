@@ -26,7 +26,11 @@ export const Register = () => {
     e.preventDefault();
     axios.post('http://localhost/backend/public/register.php', form)
       .then(response => {
-        console.log(response.data);
+        console.log(response.data);       
+         if(response.data.message == "User Created"){
+          window.alert("Usuário criado, faça o Login");
+          window.location.href = "http://localhost:5173/";
+        }  
       })
       .catch(error => {
         console.error('There was an error!', error);
