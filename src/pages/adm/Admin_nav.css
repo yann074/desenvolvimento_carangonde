@@ -39,9 +39,27 @@
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin: auto 6vw auto auto;
+    margin: auto 3vw auto auto;
     box-shadow: 1px 1px 10px black;
+    transform: .1s scale(1); transition: all .1s;
 }
+
+.buttons{
+    display: flex;
+}
+
+.button-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.button-home:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .container-header-main .button-home p{
     margin: 20px;
 }
