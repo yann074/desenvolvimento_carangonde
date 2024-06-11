@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
 import './Loginl.css';
-
 export const Login = () => {
-
   const [form, setForm] = useState({
     email: '',
     password: ''
   });
-
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -19,7 +15,7 @@ export const Login = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     axios.post('http://localhost/backend/public/login.php', form)
       .then(response => {
@@ -31,11 +27,10 @@ export const Login = () => {
           window.location.href = "http://localhost:5173/adm";
         }  
           else {
-          window.alert("email ou senha errada");
           console.error('Email ou senha incorretos');
         }
       })
-      
+
       .catch(error => {
         console.error('Houve um erro!', error);
       });
@@ -79,5 +74,5 @@ export const Login = () => {
       </form>
       </div>
     </>
-  );
-};
+
+  )}  
