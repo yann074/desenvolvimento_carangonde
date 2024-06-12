@@ -1,4 +1,3 @@
-// Admin.jsx
 import React, { useState } from 'react';
 import logo from "../../assets/logo_carangonde.svg";
 import human from "../../assets/human.svg";
@@ -9,25 +8,44 @@ import { Peoples } from './Peoples';
 import { Footer } from '../../components/Footer';
 import './Admin_nav.css';
 import ModalAdd from '../../components/ModalAdd';
+import ModalEvents from '../../components/ModalAddEvents';
 
 export const Admin = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalAddOpen, setIsModalAddOpen] = useState(false);
+  const [isModalEventsOpen, setIsModalEventsOpen] = useState(false);
 
-  const handleOpenModal = () => {
-    console.log('Opening modal');
-    setIsModalOpen(true);
+  const handleOpenModalAdd = () => {
+    console.log('Opening Add Course modal');
+    setIsModalAddOpen(true);
   };
 
-  const handleCloseModal = () => {
-    console.log('Closing modal');
-    setIsModalOpen(false);
+  const handleOpenModalEvents = () => {
+    console.log('Opening Add Event modal');
+    setIsModalEventsOpen(true);
   };
 
-  const handleSubmit = (event) => {
+  const handleCloseModalAdd = () => {
+    console.log('Closing Add Course modal');
+    setIsModalAddOpen(false);
+  };
+
+  const handleCloseModalEvents = () => {
+    console.log('Closing Add Event modal');
+    setIsModalEventsOpen(false);
+  };
+
+  const handleSubmitAdd = (event) => {
     event.preventDefault();
     const courseName = event.target.courseName.value;
     console.log("Curso adicionado:", courseName);
-    handleCloseModal();
+    handleCloseModalAdd();
+  };
+
+  const handleSubmitEvents = (event) => {
+    event.preventDefault();
+    const eventName = event.target.eventName.value;
+    console.log("Evento adicionado:", eventName);
+    handleCloseModalEvents();
   };
 
   return (
@@ -48,7 +66,8 @@ export const Admin = () => {
         </div>
         <div className='buttons'>
           <Link to={"/"} className='button-home'><p>Página Inicial</p></Link>
-          <button className='button-home' onClick={handleOpenModal}>Adicionar Curso</button>
+          <button className='button-home' onClick={handleOpenModalAdd}>Adicionar Curso</button>
+          <button className='button-home' onClick={handleOpenModalEvents}>Adicionar Evento</button>
         </div>
       </header>
 
@@ -60,7 +79,8 @@ export const Admin = () => {
         <Footer />
       </footer>
 
-      <ModalAdd isOpen={isModalOpen} onClose={handleCloseModal} onSubmit={handleSubmit} />
+      <ModalAdd isOpen={isModalAddOpen} onClose={handleCloseModalAdd} onSubmit={handleSubmitAdd} />
+      <ModalEvents isOpen={isModalEventsOpen} onClose={handleCloseModalEvents} onSubmit={handleSubmitEvents} />
     </>
   );
 };

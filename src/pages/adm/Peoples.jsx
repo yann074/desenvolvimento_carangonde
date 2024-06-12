@@ -10,7 +10,6 @@ export const Peoples = () => {
         <tr className='container-table' >
           <th>NOME</th>
           <th>CURSOS</th>
-          <th>TELEFONE</th>
           <th>EMAIL</th>
           <th>CPF</th>
         </tr>

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './styles/ModalAdd.css';
 import axios from 'axios';
 
-const ModalAdd = ({ isOpen, onClose }) => {
+const ModalAddEvents = ({ isOpen, onClose }) => {
   console.log('ModalAdd rendered, isOpen:', isOpen);
 
   const [form, setForm] = useState({
-    name_c: '',
-    desc_c: '',
-    temp_c: ''
+    name_e: '',
+    desc_e: '',
+    date_e: ''
   });
 
   const handleChange = (e) => {
@@ -20,11 +20,10 @@ const ModalAdd = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost/backend/public/modal/acaoModal.php', form)
+    axios.post('http://localhost/backend/public/events/acaoEvents.php', form)
       .then(response => {
         console.log(response.data);       
-        if (response.data.message == "Evento Criado") {
-          window.alert("Curso Criado");
+        if (response.data.message === "Evento Criado") {
         }  
       })
       .catch(error => {
@@ -37,23 +36,23 @@ const ModalAdd = ({ isOpen, onClose }) => {
   return (
     <div className="modal-overlay3">
       <div className="modal-content3">
-        <h2>Adicionar Curso</h2>
+        <h2>Adicionar Evento</h2>
         <form className='form' onSubmit={handleSubmit}>
         <label>
             Adicione um foto:
             <input type="file"/>
           </label>
           <label>
-            Nome do Curso:
-            <input type="text" name="name_c" onChange={handleChange} required />
+            Nome do Evento:
+            <input type="text" name="name_e" onChange={handleChange} required />
           </label>
           <label>
-            Descrição:
-            <input type="text" name='desc_c' onChange={handleChange} required />
+            Descrição do Evento:
+            <input type="text" name='desc_e' onChange={handleChange} required />
           </label>
           <label>
-            Tempo do Curso:
-            <input type="time" name='temp_c' onChange={handleChange} required />
+            Data do Evento:
+            <input type="date" name='date_e' onChange={handleChange} required />
           </label>
           <div className="modal-buttons3">
             <button type="submit">Adicionar</button>
@@ -65,4 +64,4 @@ const ModalAdd = ({ isOpen, onClose }) => {
   );
 };
 
-export default ModalAdd;
+export default ModalAddEvents;
