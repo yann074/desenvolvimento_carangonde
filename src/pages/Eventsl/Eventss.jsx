@@ -11,7 +11,7 @@ export const Eventss = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost/backend/public/events/aparecerEvents.php')
+    axios.get('http://localhost/backend/public/Modal/aparecerEvents.php')
       .then(response => {
         if (response.data && response.data.data) {
           console.log(response.data.message);
@@ -41,22 +41,22 @@ export const Eventss = () => {
             {error && <p className="error-message">{error}</p>}
             {data.length > 0 ? (
               data.map(item => {
-                const { id, name_e, desc_e, date_e } = item;
+                const { id, name_c, desc_c, temp_c, image_path } = item;
                 return (
                   <div className='item' key={id}>
                     <div className='vazio-branco'>
-                      <img src="" alt="Event" />
+                      <img src={`http://localhost/backend/${image_path}`} alt="Course" />
                     </div>
                     <div className='texto-eventos'>
-                      <h3>{name_e}</h3>
-                      <p>{desc_e}</p>
-                      <p>{date_e}</p>
+                      <h3>{name_c}</h3>
+                      <p>{desc_c}</p>
+                      <p>{temp_c}</p>
                     </div>
                   </div>
                 );
               })
             ) : (
-              !error && <p>Carregando eventos...</p>
+              !error && <p>Carregando cursos...</p>
             )}
           </div>
         </section>
